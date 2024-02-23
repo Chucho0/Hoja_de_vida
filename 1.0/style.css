@@ -1,0 +1,505 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.fila1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+h2 {
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 20px;
+  height: 50%;
+  width: 50%;
+}
+
+button {
+  background-color: rgb(215, 233, 227);
+  color: rgb(0, 0, 0);
+  border: 1;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 15px;
+}
+
+footer {
+  text-align: right;
+  background-color: black;
+  padding: 10px 0;
+  height: 25px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+footer p {
+  margin-right: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.barra-de-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navegacion-izquierda h1 {
+  color: RGB(230, 230, 230);
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.diferenciador {
+  background-color: RGB(230, 230, 230);
+  border-radius: 5px;
+  transition: transform 00.5s;
+}
+
+.diferenciador:hover {
+  transform: scale(1.1);
+}
+
+.navegacion-derecha {
+  display: flex;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.navegacion-derecha a {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.imagen {
+  border-radius: 90%;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hdos {
+  text-align: center;
+  font-weight: 800;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+}
+
+.Tomas {
+  text-align: center;
+  margin-bottom: 0%;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin: 20px;
+}
+
+.primerafila {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 30px 0;
+}
+
+.segundafila {
+  background-color: RGB(230, 230, 230);
+  padding: 30px 0;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.tercerafila {
+  background-color: beige;
+  padding-top: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.columnados {
+  flex-basis: calc(25% - 20px);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: RGB(230, 230, 230);
+}
+
+.final {
+  color: white;
+  font-size: 30px;
+}
+
+.imglenguajes {
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.textolenguajes {
+  margin: 20px;
+  text-align: left;
+}
+
+.textosegundafila {
+  margin: 10px;
+}
+
+.imgprincipal {
+  width: 600px;
+  height: 300px;
+}
+
+p {
+  font-size: 17px;
+}
+
+@media (max-width: 1400px) {
+  .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hdos {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hdos {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hdos {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .imglenguajes {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 565px) {
+  .fila {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .navegacion-derecha {
+    font-size: 23px;
+    gap: 5px;
+  }
+
+  .navegacion-derecha a {
+    margin-right: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fila {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .navegacion-derecha {
+    font-size: 23px;
+    gap: 5px;
+  }
+
+  .navegacion-derecha a {
+    margin-right: 1px;
+  }
+
+  .diferenciador:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 477px) {
+  .navegacion-derecha {
+    font-size: 17px;
+    gap: 4px;
+  }
+
+  .navegacion-izquierda h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navegacion-derecha {
+    font-size: 17px;
+    gap: 4px;
+  }
+
+  .navegacion-izquierda h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 379px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .imagen {
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .imgprincipal {
+    width: 300px;
+    height: 150px;
+  }
+
+  .navegacion-izquierda h1 {
+    font-size: 25px;
+  }
+
+  .navegacion-derecha {
+    font-size: 13px;
+    gap: 3px;
+  }
+
+  .hdos {
+    font-size: 30px;
+  }
+
+  .imglenguajes {
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .imagen {
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .imgprincipal {
+    width: 300px;
+    height: 150px;
+  }
+
+  .navegacion-izquierda h1 {
+    font-size: 25px;
+  }
+
+  .navegacion-derecha {
+    font-size: 13px;
+    gap: 3px;
+  }
+
+  .hdos {
+    font-size: 30px;
+  }
+
+  .imglenguajes {
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 273px) {
+  .final {
+    font-size: 15px;
+  }
+
+  .hdos {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .navegacion-izquierda h1 {
+    font-size: 15px;
+  }
+
+  .navegacion-derecha {
+    font-size: 8px;
+    gap: 2px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 1px;
+  }
+
+  .Tomas {
+    font-size: 13px;
+
+  }
+
+  .imglenguajes {
+    width: 70px;
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  .imagen {
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .imgprincipal {
+    width: 1500px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 200px) {
+  .final {
+    font-size: 15px;
+  }
+
+  .hdos {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .navegacion-izquierda h1 {
+    font-size: 15px;
+  }
+
+  .navegacion-derecha {
+    font-size: 8px;
+    gap: 2px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 1px;
+  }
+
+  .Tomas {
+    font-size: 13px;
+
+  }
+
+  .imglenguajes {
+    width: 70px;
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  .imagen {
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .imgprincipal {
+    width: 1500px;
+    height: 75px;
+  }
+}
